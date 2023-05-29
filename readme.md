@@ -10,10 +10,7 @@
 git clone --single-branch --branch br_template https://github.com/mafulong/mdPic.git
 NewName=v8
 git co -b $NewName
-cd images
-mkdir $NewName
-mv placeholder $NewName/
-cd ..
+rm -rf images
 git push
 ```
 
