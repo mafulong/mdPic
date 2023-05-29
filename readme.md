@@ -8,14 +8,12 @@
 
 ```scala
 git clone --single-branch --branch br_template https://github.com/mafulong/mdPic.git
-git co br_template
-git co -b v8
-git push --set-upstream origin v8
-```
-
-图床设置
-
-```scala
-https://cdn.jsdelivr.net/gh/mafulong/mdPic@vv8
+NewName=v8
+git co -b $NewName
+cd images
+mkdir $NewName
+mv placeholder $NewName/
+cd ..
+git push
 ```
 
