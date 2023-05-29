@@ -13,3 +13,9 @@ git co -b v8
 git push --set-upstream origin v8
 ```
 
+图床设置
+
+```scala
+https://cdn.jsdelivr.net/gh/mafulong/mdPic@vv8
+```
+
