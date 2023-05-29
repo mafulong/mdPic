@@ -8,7 +8,8 @@
 
 ```scala
 git clone --single-branch --branch br_template https://github.com/mafulong/mdPic.git
+git co br_template
 git co -b v8
-git push
+git push --set-upstream origin v8
 ```
 
