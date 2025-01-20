@@ -17,10 +17,8 @@ git checkout br_template
 NewName=v9
 git checkout -b $NewName
 
-# 删除 images 文件夹
-rm -rf images
-
-mkdir $NewName
+# rename images 文件夹
+mv images $NewName
 
 # 推送新分支到远程仓库
 git push --set-upstream origin $NewName
