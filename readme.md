@@ -4,13 +4,25 @@
 
 
 
-由于repo过大，下载仓库时使用以下命令。
-
 ```scala
-git clone --single-branch --branch br_template https://github.com/mafulong/mdPic.git
-NewName=v8
-git co -b $NewName
+# 使用 SSH 克隆指定分支
+git clone git@github.com:mafulong/mdPic.git
+
+# 切换到克隆的目录
+cd mdPic
+
+git checkout br_template
+
+# 创建新分支并切换到该分支
+NewName=v9
+git checkout -b $NewName
+
+# 删除 images 文件夹
 rm -rf images
-git push
+
+mkdir $NewName
+
+# 推送新分支到远程仓库
+git push --set-upstream origin $NewName
 ```
 
